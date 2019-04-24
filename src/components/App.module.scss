@@ -2,10 +2,17 @@
 
 .app {
   height: 100vh;
-  text-align: center;
   font-family: $firaFontFamily;
   // composes: baseFontFamily from '../styles/typography.scss'
   background-color: $cello;
+}
+
+.contentWrapper {
+  height: 100%;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .appHeader {
@@ -13,8 +20,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: $xlFontSize;
-  color: white;
+  font-size: $xxlFontSize;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: $mystic;
 }
 
 .appLink {
