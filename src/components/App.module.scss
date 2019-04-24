@@ -1,0 +1,22 @@
+@import '../assets/styles/variables';
+
+.app {
+  height: 100vh;
+  text-align: center;
+  font-family: $firaFontFamily;
+  // composes: baseFontFamily from '../styles/typography.scss'
+  background-color: $cello;
+}
+
+.appHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: $xlFontSize;
+  color: white;
+}
+
+.appLink {
+  color: #61dafb;
+}

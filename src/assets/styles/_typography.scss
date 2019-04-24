@@ -1,0 +1,14 @@
+// font-family
+$firaFontFamily: 'fira-sans', sans-serif;
+
+// another way of defining reusable style in CSS MODULES - then used in another selector (which must be a class selector) in 'composes' property
+// .baseFontFamily {
+//   font-family: 'fira-sans', sans-serif;
+// }
+
+// font-size
+$xsFontSize: 0.8rem;
+$sFontSize: 1rem;
+$mFontSize: 1.5rem;
+$lFontSize: 2rem;
+$xlFontSize: 2.5rem;
