@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## App description
+
+This project aims to be a basic CRUD application, to serve as a playground for testing some features, eg. react hooks.
+
+## Technology stack
+
+- React
+- CSS Modules
+
 ## Available Scripts
 
 In the project directory, you can run:
