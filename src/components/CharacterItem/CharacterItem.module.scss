@@ -1,3 +1,17 @@
+@import '../../assets/styles/index.scss';
+
 .characterItem {
-  background-color: white;
+  border-radius: 4px;
+  background-color: $mystic;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+.characterImage {
+  height: 40%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
