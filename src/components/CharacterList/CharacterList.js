@@ -5,10 +5,13 @@ import { API_KEY, CHARACTERS_URL } from '../../constants/api';
 import CharacterItem from '../CharacterItem/CharacterItem';
 
 const CharacterList = () => {
-  const [characters, setCharacters] = useState([...new Array(14)]);
+  const [characters, setCharacters] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
+
       const {
         data: { data = { results: [] } }
       } = await axios.get(CHARACTERS_URL, {
@@ -17,11 +20,14 @@ const CharacterList = () => {
         }
       });
       setCharacters(data.results);
+      setIsLoading(false);
     };
     fetchData();
   }, []);
 
-  return (
+  return isLoading ? (
+    <div>Heros are arriving...</div>
+  ) : (
     <ul className={styles.characterList}>
       {characters.map((character, i) => (
         <CharacterItem key={i} data={character} />
